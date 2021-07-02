@@ -1,7 +1,16 @@
+
+
+# Folders
+out
+.vs
+
+# CMake Speific
+
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
+CMakeSettings.json
 Testing
 Makefile
 cmake_install.cmake
