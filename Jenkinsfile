@@ -18,6 +18,7 @@ agent any
 			steps
 			{
 			echo 'Running Tests'
+			sh 'ctest'
 				
 			}
 			
