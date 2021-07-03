@@ -5,7 +5,10 @@ agent any
 	
 		stage('Build')
 		{
+			steps{
 			echo 'Building the project with CMake'
+			}
+			
 		}
 	}
 }
