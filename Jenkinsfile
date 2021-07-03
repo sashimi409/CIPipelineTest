@@ -38,7 +38,7 @@ pipeline{
 					
 					/* a realease in github will need to be created before we can add artifacts */
 
-					tag=$(git describe --tags)
+					tag=$(sh 'git describe --tags')
 					release=$(curl -XPOST -H "Authorization:token $GITHUB_TOKEN" --data "{\"tag_name\": \"$tag\"}" https://api.github.com/repos/sashimi409/CIPipelineTest/releases)
 
 
