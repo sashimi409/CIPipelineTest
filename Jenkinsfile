@@ -16,7 +16,7 @@ pipeline{
 			stage('Test')
 			{
 				steps
-				{zs
+				{
 				echo 'Running Tests'
 				sh 'ctest'
 				
