@@ -1,27 +1,27 @@
 pipeline{
 
-agent any
-	stages{
+	agent any
+		stages{
 	
-		stage('Build')
-		{
-			steps
+			stage('Build')
 			{
-			echo 'Building the project with CMake'
-			sh 'cmake . && make'
-			}
+				steps
+				{
+				echo 'Building the project with CMake'
+				sh 'cmake . && make'
+				}
 			
-		}
+			}
 
-		stage('Test')
-		{
-			steps
+			stage('Test')
 			{
-			echo 'Running Tests'
-			sh 'ctest'
+				steps
+				{zs
+				echo 'Running Tests'
+				sh 'ctest'
 				
-			}
+				}
 			
+			}
 		}
 	}
-}
