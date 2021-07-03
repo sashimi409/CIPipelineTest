@@ -5,8 +5,20 @@ agent any
 	
 		stage('Build')
 		{
-			steps{
+			steps
+			{
 			echo 'Building the project with CMake'
+			sh 'cmake . && make'
+			}
+			
+		}
+
+		stage('Test')
+		{
+			steps
+			{
+			echo 'Running Tests'
+				
 			}
 			
 		}
