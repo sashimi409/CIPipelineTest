@@ -13,6 +13,6 @@ add_executable(CIPipeline main.cpp Printer.cpp Printer.h)
 
 enable_testing()
 
-add_executable(testing CounterTest.cpp Printer.cpp Printer.h)
+add_executable(testing PrinterTest.cpp)
 
 add_test(Testing testing)
