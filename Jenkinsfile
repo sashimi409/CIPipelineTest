@@ -7,7 +7,7 @@ pipeline{
 			{
 				steps
 				{
-				echo 'Building the project with CMake'
+				echo 'Building the project with CMake with friends to watch'
 				sh 'cmake . && make'
 				}
 			
